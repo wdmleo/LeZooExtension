@@ -1,0 +1,104 @@
+// out: app.css, sourcemap: true, compress: true
+
+body {
+    width: 350px;
+}
+
+table {
+    width: 318px;
+    thead {
+        text-align: center;
+    }
+    margin: 16px;
+}
+
+.animallist {
+    border-bottom: 1px solid #95a5a6;
+    td {
+        padding-bottom: 16px;
+        padding-top: 16px;
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    td:nth-child(1) {
+        width: 25%;
+    }
+    td:nth-child(3) {
+        width: 42px;
+    }
+}
+
+.streamer_name {
+    font-size: larger;
+    font-weight: bold;
+    display: block
+
+}
+
+.stream_state {
+    font-size: small;
+}
+
+.off {
+    color: #bdc3c7;
+}
+.on {
+    color: #27ae60;
+}
+
+.streamer_name {
+    display: block;
+
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 40px;
+	height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 20px;
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	background: #fff;
+	border-radius: 18px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 13px;
+}
+
+.align-checkbox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

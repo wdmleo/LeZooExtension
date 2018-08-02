@@ -1,0 +1,32 @@
+{
+    "name": "Le Zoo Notif",
+    "version": "0.1",
+    "description": "L'application vous permettant d'être notifié à n'importe qu'elle moment des streams du Zoo !",
+    "manifest_version": 2,
+    "permissions": [
+        "declarativeContent",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "dist/js/jquery-3.3.1.min.js",
+            "twitch_check.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "stream.html",
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started32.png",
+            "48": "images/get_started48.png",
+            "128": "images/get_started128.png"
+        }
+    },
+    "icons": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+    }
+}
